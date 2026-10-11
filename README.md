@@ -17,7 +17,7 @@ git clone https://github.com/vivienkaizinger/kai_kkj_kisleadando
 cd ~/ros2_ws
 ```
 ``` r
-colcon build --packages-select kai_kkj_kisleadando --symlink-install
+colcon build --packages-select ros2_parking_radar --symlink-install
 ```
 
 <details>
@@ -29,7 +29,7 @@ source ~/ros2_ws/install/setup.bash
 </details>
 
 ``` r
-ros2 launch kai_kkj_kisleadando launch_example1.launch.py
+ros2 launch ros2_parking_radar parking_radar.launch.py
 ```
 
 ## Graph
