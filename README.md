@@ -32,3 +32,16 @@ source ~/ros2_ws/install/setup.bash
 ros2 launch kai_kkj_kisleadando launch_example1.launch.py
 ```
 
+## Graph
+
+```mermaid
+flowchart LR
+    A(["/distance_sensor"]) --> B["/distance<br/>std_msgs/Float32"]
+    B --> C(["/parking_monitor"])
+    C --> D["/parking_status<br/>std_msgs/String"]
+
+    style A fill:#F44336,stroke:#222,color:#fff
+    style B fill:#35AFC4,stroke:#222,color:#000
+    style C fill:#F44336,stroke:#222,color:#fff
+    style D fill:#35AFC4,stroke:#222,color:#000
+```
